@@ -1,0 +1,64 @@
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-md shadow">
+    <div class="container">
+      <div
+        class="navbar-brand d-flex justify-content-center align-items-center gap-2 text-white fw-bold"
+      >
+        <img
+          [src]="this.user.avatar_url"
+          class="rounded-circle"
+          alt="profile"
+          style="height: 40px"
+        />
+        Hello {{ this.user.login }} ✨
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul
+          class="navbar-nav ms-auto d-flex justify-content-center align-items-end align-items-lg-center"
+        >
+          <li class="nav-item d-md-none">
+            <a
+              routerLink="/dashboard"
+              class="nav-link text-white active"
+              aria-current="page"
+            >
+              Dashboard</a
+            >
+          </li>
+          <li class="nav-item d-md-none">
+            <a
+              routerLink="/profile"
+              class="nav-link text-white active"
+              aria-current="page"
+            >
+              Profile</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white active" aria-current="page">
+              <button
+                mat-flat-button
+                class="bg-danger text-white"
+                (click)="this.logout()"
+              >
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

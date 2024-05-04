@@ -1,0 +1,47 @@
+<div class="row gap-3">
+  <div class="col-sm-12 col-lg">
+    <card-info
+      [title]="'Repositories'"
+      [value]="this.user.public_repos + this.user.total_private_repos"
+      [icon]="'./assets/ilustration/file.svg'"
+      [borderLeft]="'6px solid rgb(56, 122, 223)'"
+    />
+  </div>
+  <div class="col-sm-12 col-lg">
+    <card-info
+      [title]="'Followers'"
+      [value]="this.user.followers"
+      [icon]="'./assets/ilustration/followers.svg'"
+      [borderLeft]="'6px solid #FF6B6B'"
+    />
+  </div>
+  <div class="col-sm-12 col-lg">
+    <card-info
+      [title]="'Following'"
+      [value]="this.user.following"
+      [icon]="'./assets/ilustration/following.svg'"
+      [borderLeft]="'6px solid #6BCB77'"
+    />
+  </div>
+  <div class="col-sm-12 col-lg">
+    <card-info
+      [title]="'Disk Usage (Kb)'"
+      [value]="this.user.disk_usage"
+      [icon]="'./assets/ilustration/disk.png'"
+      [borderLeft]="'6px solid #FFD93D'"
+    />
+  </div>
+</div>
+
+<!-- <div class="mt-4 my-3"><h2>Graphics</h2></div> -->
+<div class="row gap-3 my-3 px-2">
+  <div class="col-sm-12 col-lg p-3 bg-white border rounded-4">
+    <data-lang-chart />
+  </div>
+  <div class="col-sm-12 col-lg p-3 bg-white border rounded-4">
+    <data-size-repo />
+  </div>
+  <div class="p-3 bg-white border rounded-4">
+    <data-commits-repo />
+  </div>
+</div>

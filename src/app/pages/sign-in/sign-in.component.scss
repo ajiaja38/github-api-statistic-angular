@@ -1,0 +1,16 @@
+.login {
+  height: 100vh;
+  background: rgb(12, 53, 106);
+  background: radial-gradient(
+    circle,
+    rgba(12, 53, 106, 1) 0%,
+    rgba(12, 53, 106, 1) 0%,
+    rgba(1, 116, 190, 1) 100%
+  );
+}
+
+.form-signin {
+  width: 330px;
+  max-width: 330px;
+  padding: 1rem;
+}
